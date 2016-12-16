@@ -24,8 +24,9 @@ a {
   width: 100vw;
   background-image: url("../img/hero.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   @extend %flex;
+  flex-direction: column;
   .nav {
     width: 100vw;
     height: em(100px);
@@ -46,6 +47,29 @@ a {
         color:($white);
         margin: 0 em(20px);
       }
+    }
+  }
+  .main-center {
+    text-align: center;
+    width: 100%;
+    color: $white;
+    .main-image {
+      width: 75%;
+      margin-top: em(-50px);
+      margin-bottom: em(-50px);
+    }
+    h2 {
+      font-size: 20px;
+      letter-spacing: 7px;
+      margin-bottom: 0;
+      margin-top: 5px;
+    }
+    .main-line {
+      height: em(5px);
+      width: em(300px);
+      background-color: $white;
+      display: inline-block;
+      margin-top: em(-50px);
     }
   }
 }

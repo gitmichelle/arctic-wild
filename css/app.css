@@ -24,7 +24,8 @@ a {
   width: 100vw;
   background-image: url("../img/hero.jpg");
   background-repeat: no-repeat;
-  background-size: contain; }
+  background-size: cover;
+  flex-direction: column; }
   .main .nav {
     width: 100vw;
     height: 6.25em;
@@ -40,5 +41,24 @@ a {
       .main .nav .top-nav li {
         color: white;
         margin: 0 1.25em; }
+  .main .main-center {
+    text-align: center;
+    width: 100%;
+    color: white; }
+    .main .main-center .main-image {
+      width: 75%;
+      margin-top: -3.125em;
+      margin-bottom: -3.125em; }
+    .main .main-center h2 {
+      font-size: 20px;
+      letter-spacing: 7px;
+      margin-bottom: 0;
+      margin-top: 5px; }
+    .main .main-center .main-line {
+      height: 0.3125em;
+      width: 18.75em;
+      background-color: white;
+      display: inline-block;
+      margin-top: -3.125em; }
 
 /*# sourceMappingURL=app.css.map */
