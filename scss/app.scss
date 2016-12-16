@@ -1,0 +1,33 @@
+@import "libraries/bourbon/bourbon.scss";
+@import "libraries/neat/neat.scss";
+@import "_reset.scss";
+@import "_variables.scss";
+@import "_mixins.scss";
+
+.hide {
+  display: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../img/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  .nav {
+    width: 100vw;
+    height: em(100px);
+    padding: em(75px) em(120px);
+    .nav-logo1 {
+      height: em(50px);
+    }
+    .nav-logo2 {
+      width: 21%;
+    }
+  }
+}

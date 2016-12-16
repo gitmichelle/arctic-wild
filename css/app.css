@@ -1,0 +1,29 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+.hide {
+  display: none; }
+
+html, body {
+  margin: 0;
+  padding: 0; }
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../img/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: contain; }
+  .main .nav {
+    width: 100vw;
+    height: 6.25em;
+    padding: 4.6875em 7.5em; }
+    .main .nav .nav-logo1 {
+      height: 3.125em; }
+    .main .nav .nav-logo2 {
+      width: 21%; }
+
+/*# sourceMappingURL=app.css.map */
