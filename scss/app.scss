@@ -167,3 +167,46 @@ a {
       }
     }
   }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+  }
+
+  .box {
+    height: 325px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    flex: 1 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    &:nth-child(1) {
+      background-image: url("../img/rafting.jpg");
+      flex-basis: 600px;
+    }
+    &:nth-child(2) {
+      background-image: url("../img/basecamp.jpg");
+      flex-basis: 300px;
+    }
+    &:nth-child(3) {
+      background-image: url("../img/backpacking.jpg");
+      flex-basis: 300px;
+    }
+    &:nth-child(4) {
+      background-image: url("../img/canoeing.jpg");
+      flex-basis: 300px;
+    }
+    &:nth-child(5) {
+      background-image: url("../img/photography.jpg");
+      flex-basis: 300px;
+    }
+    &:nth-child(6) {
+      background-image: url("../img/custom.jpg");
+      flex-basis: 600px;
+    }
+  }
