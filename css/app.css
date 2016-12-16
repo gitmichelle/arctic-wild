@@ -4,7 +4,7 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-.main, .main .nav, .main .nav .top-nav, .main .main-center, .middle-nav-wrap, .middle-nav-wrap .middle-nav, .middle-nav-wrap .middle-nav .middle-list, .middle-nav-wrap .middle-nav .middle-list .left {
+.main, .main .nav, .main .nav .top-nav, .main .main-center, .middle-nav-wrap, .middle-nav-wrap .middle-nav, .middle-nav-wrap .middle-nav .middle-list, .middle-nav-wrap .middle-nav .middle-list .left, .container, .box, .box .circle {
   display: flex; }
 
 .hide {
@@ -135,12 +135,12 @@ a {
           color: #c0b4a6; }
 
 .container {
-  display: flex;
   flex-wrap: wrap;
   padding: 0;
   margin: 0; }
 
 .box {
+  justify-content: center;
   height: 325px;
   border: none;
   margin: 0;
@@ -150,6 +150,18 @@ a {
   background-position: center;
   background-size: cover;
   overflow: hidden; }
+  .box .circle {
+    background-image: url("../img/bg-gallery-button.png");
+    border-radius: 50%/50%;
+    width: 5.625em;
+    height: 5.625em;
+    opacity: .8;
+    justify-content: center;
+    justify-content: center;
+    align-items: center; }
+    .box .circle img {
+      width: 2.8125em;
+      align-self: center; }
   .box:nth-child(1) {
     background-image: url("../img/rafting.jpg");
     flex-basis: 600px; }

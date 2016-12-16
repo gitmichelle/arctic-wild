@@ -169,13 +169,15 @@ a {
   }
 
   .container {
-    display: flex;
+    @extend %flex;
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
   }
 
   .box {
+    @extend %flex;
+    justify-content: center;
     height: 325px;
     border: none;
     margin: 0;
@@ -185,10 +187,24 @@ a {
     background-position: center;
     background-size: cover;
     overflow: hidden;
+    .circle {
+      background-image: url("../img/bg-gallery-button.png");
+      border-radius: 50%/50%;
+      width: em(90px);
+      height: em(90px);
+      opacity: .8;
+      justify-content: center;
+      @extend %flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: em(45px);
+        align-self: center;
+      }
+    }
     &:nth-child(1) {
       background-image: url("../img/rafting.jpg");
-      flex-basis: 600px;
-    }
+      flex-basis: 600px;    }
     &:nth-child(2) {
       background-image: url("../img/basecamp.jpg");
       flex-basis: 300px;
