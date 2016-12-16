@@ -11,6 +11,12 @@
 html, body {
   margin: 0;
   padding: 0;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
 }
 
 .main {
@@ -19,15 +25,27 @@ html, body {
   background-image: url("../img/hero.jpg");
   background-repeat: no-repeat;
   background-size: contain;
+  @extend %flex;
   .nav {
     width: 100vw;
     height: em(100px);
     padding: em(75px) em(120px);
+    @extend %flex;
+    align-items: flex-start;
     .nav-logo1 {
       height: em(50px);
     }
     .nav-logo2 {
       width: 21%;
+    }
+    .top-nav {
+      list-style: none;
+      @extend %flex;
+      align-items: center;
+      li {
+        color:($white);
+        margin: 0 em(20px);
+      }
     }
   }
 }

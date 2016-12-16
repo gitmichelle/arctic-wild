@@ -4,12 +4,20 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+.main, .main .nav, .main .nav .top-nav {
+  display: flex; }
+
 .hide {
   display: none; }
 
 html, body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: 'Fjalla One', sans-serif; }
+
+a {
+  color: white;
+  text-decoration: none; }
 
 .main {
   height: 100vh;
@@ -20,10 +28,17 @@ html, body {
   .main .nav {
     width: 100vw;
     height: 6.25em;
-    padding: 4.6875em 7.5em; }
+    padding: 4.6875em 7.5em;
+    align-items: flex-start; }
     .main .nav .nav-logo1 {
       height: 3.125em; }
     .main .nav .nav-logo2 {
       width: 21%; }
+    .main .nav .top-nav {
+      list-style: none;
+      align-items: center; }
+      .main .nav .top-nav li {
+        color: white;
+        margin: 0 1.25em; }
 
 /*# sourceMappingURL=app.css.map */
