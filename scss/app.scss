@@ -50,7 +50,7 @@ a {
       align-items: center;
 
       li {
-        color:($white);
+        color:$white;
         margin: 0 em(20px);
         align-self: flex-end;
       }
@@ -85,7 +85,7 @@ a {
     height: em(150px);
     bottom: 0;
       .button {
-        background-color: #dc7725;
+        background-color: $orange;
         border: none;
         color: $white;
         width: 100%;
@@ -105,7 +105,7 @@ a {
       }
       .arrow_box {
       	position: relative;
-      	background: #dc7725;
+      	background: $orange;
       }
       .arrow_box:after {
       	top: 0;
@@ -116,11 +116,54 @@ a {
       	width: 0;
       	position: absolute;
       	pointer-events: none;
-      	border-top-color: #dc7725;
+      	border-top-color: $orange;
       	border-width: 10px;
       	margin-left: -10px;
       }
     }
   }
-
 }
+
+.middle-nav-wrap{
+  width: 100vw;
+  height: em(100px);
+  background-image: url(../img/bg-middle-nav.jpg);
+  background-repeat: repeat;
+  border: 2px solid black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: em(14px);
+  padding: 0 em(100px) 0 em(30px);
+  @extend %flex;
+  .middle-nav {
+    @extend %flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100%;
+    width: 100vw;
+    .middle-list {
+      width: 100%;
+      height: 100%;
+      list-style: none;
+      @extend %flex;
+      justify-content: space-between;
+      align-items: center;
+      .left {
+        @extend %flex;
+        justify-content: flex-start;
+      }
+      .right {
+        justify-content: flex-end;
+      }
+      #bar {
+        color: $white;
+      }
+      li {
+        margin: 0 em(20px);
+        a {
+          color: #c0b4a6;
+          }
+        }
+      }
+    }
+  }
