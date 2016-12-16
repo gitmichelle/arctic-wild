@@ -30,14 +30,16 @@ a {
   .nav {
     width: 100vw;
     height: em(100px);
-    padding: em(75px) em(120px);
+    padding: em(75px) em(100px);
     @extend %flex;
     align-items: flex-start;
+    justify-content: space-between;
     .nav-logo1 {
       height: em(50px);
     }
     .nav-logo2 {
-      width: 21%;
+      width: 175px;
+      margin-left: -60px;
     }
     .top-nav {
       list-style: none;
@@ -54,7 +56,7 @@ a {
     width: 100%;
     color: $white;
     .main-image {
-      width: 75%;
+      width: 850px;
       margin-top: em(-50px);
       margin-bottom: em(-50px);
     }
@@ -67,9 +69,8 @@ a {
     .main-line {
       height: em(5px);
       width: em(300px);
-      background-color: $white;
       display: inline-block;
-      margin-top: em(-50px);
+      background-color: $white;
     }
   }
 }
