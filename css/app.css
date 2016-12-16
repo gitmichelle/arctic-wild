@@ -61,5 +61,19 @@ a {
       width: 18.75em;
       display: inline-block;
       background-color: white; }
+    .main .main-center .button {
+      background-color: #dc7725;
+      border: none;
+      color: white;
+      padding: 1.5625em 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 0.875em;
+      margin-top: 4.375em;
+      cursor: pointer;
+      border-radius: 4px;
+      font-family: 'Fjalla One', sans-serif;
+      letter-spacing: 3px; }
 
 /*# sourceMappingURL=app.css.map */
