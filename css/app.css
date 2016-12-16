@@ -4,7 +4,7 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-.main, .main .nav, .main .nav .top-nav {
+.main, .main .nav, .main .nav .top-nav, .main .main-center {
   display: flex; }
 
 .hide {
@@ -32,25 +32,27 @@ a {
     padding: 4.6875em 6.25em;
     align-items: flex-start;
     justify-content: space-between; }
-    .main .nav .nav-logo1 {
-      height: 3.125em; }
-    .main .nav .nav-logo2 {
-      width: 175px;
-      margin-left: -60px; }
+    .main .nav .left-logos .nav-logo1 {
+      height: 50px;
+      margin-right: 10px; }
+    .main .nav .left-logos .nav-logo2 {
+      width: 175px; }
     .main .nav .top-nav {
       list-style: none;
       align-items: center; }
       .main .nav .top-nav li {
         color: white;
-        margin: 0 1.25em; }
+        margin: 0 1.25em;
+        align-self: flex-end; }
   .main .main-center {
-    text-align: center;
     width: 100%;
-    color: white; }
+    color: white;
+    flex-direction: column;
+    align-items: center; }
     .main .main-center .main-image {
       width: 850px;
-      margin-top: -3.125em;
-      margin-bottom: -3.125em; }
+      margin-top: -50px;
+      margin-bottom: -50px; }
     .main .main-center h2 {
       font-size: 20px;
       letter-spacing: 7px;
@@ -61,19 +63,43 @@ a {
       width: 18.75em;
       display: inline-block;
       background-color: white; }
-    .main .main-center .button {
-      background-color: #dc7725;
-      border: none;
-      color: white;
-      padding: 1.5625em 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 0.875em;
-      margin-top: 4.375em;
-      cursor: pointer;
-      border-radius: 4px;
-      font-family: 'Fjalla One', sans-serif;
-      letter-spacing: 3px; }
+    .main .main-center .wrap {
+      overflow: hidden;
+      width: 12.5em;
+      height: 9.375em;
+      bottom: 0; }
+      .main .main-center .wrap .button {
+        background-color: #dc7725;
+        border: none;
+        color: white;
+        width: 100%;
+        height: auto;
+        padding: 1.5625em 32px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 0.875em;
+        margin-top: 4.375em;
+        cursor: pointer;
+        border-radius: 4px;
+        font-family: 'Fjalla One', sans-serif;
+        letter-spacing: 3px;
+        position: relative;
+        overflow: hidden; }
+      .main .main-center .wrap .arrow_box {
+        position: relative;
+        background: #dc7725; }
+      .main .main-center .wrap .arrow_box:after {
+        top: 0;
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-top-color: #dc7725;
+        border-width: 10px;
+        margin-left: -10px; }
 
 /*# sourceMappingURL=app.css.map */

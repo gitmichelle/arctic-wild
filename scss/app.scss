@@ -34,31 +34,38 @@ a {
     @extend %flex;
     align-items: flex-start;
     justify-content: space-between;
-    .nav-logo1 {
-      height: em(50px);
-    }
-    .nav-logo2 {
-      width: 175px;
-      margin-left: -60px;
+    .left-logos {
+      .nav-logo1 {
+        height: 50px;
+        margin-right: 10px;
+      }
+      .nav-logo2 {
+        width: 175px;
+        // margin-left: -60px;
+      }
     }
     .top-nav {
       list-style: none;
       @extend %flex;
       align-items: center;
+
       li {
         color:($white);
         margin: 0 em(20px);
+        align-self: flex-end;
       }
     }
   }
   .main-center {
-    text-align: center;
     width: 100%;
     color: $white;
+    @extend %flex;
+    flex-direction: column;
+    align-items: center;
     .main-image {
       width: 850px;
-      margin-top: em(-50px);
-      margin-bottom: em(-50px);
+      margin-top: -50px;
+      margin-bottom: -50px;
     }
     h2 {
       font-size: 20px;
@@ -72,20 +79,47 @@ a {
       display: inline-block;
       background-color: $white;
     }
-    .button {
-      background-color: #dc7725;
-      border: none;
-      color: $white;
-      padding: em(25px) 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: em(14px);
-      margin-top: em(70px);
-      cursor: pointer;
-      border-radius: 4px;
-      font-family: 'Fjalla One', sans-serif;
-      letter-spacing: 3px;
+    .wrap {
+    overflow: hidden;
+    width: em(200px);
+    height: em(150px);
+    bottom: 0;
+      .button {
+        background-color: #dc7725;
+        border: none;
+        color: $white;
+        width: 100%;
+        height: auto;
+        padding: em(25px) 32px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: em(14px);
+        margin-top: em(70px);
+        cursor: pointer;
+        border-radius: 4px;
+        font-family: 'Fjalla One', sans-serif;
+        letter-spacing: 3px;
+        position: relative;
+        overflow: hidden;
+      }
+      .arrow_box {
+      	position: relative;
+      	background: #dc7725;
+      }
+      .arrow_box:after {
+      	top: 0;
+      	left: 50%;
+      	border: solid transparent;
+      	content: " ";
+      	height: 0;
+      	width: 0;
+      	position: absolute;
+      	pointer-events: none;
+      	border-top-color: #dc7725;
+      	border-width: 10px;
+      	margin-left: -10px;
+      }
     }
   }
 
