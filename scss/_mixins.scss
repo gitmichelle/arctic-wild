@@ -7,12 +7,12 @@
     }
   }
   @else if $break == "medium" {
-    @media (min-width: $brkpoint-md + 1) {
+    @media (min-width: $brkpoint-md + 1) and (max-width: $brkpoint-lg){
       @content;
     }
   }
   @else if $break == "large" {
-    @media (min-width: $brkpoint-lg) {
+    @media (min-width: $brkpoint-lg + 1) {
       @content;
     }
   }

@@ -30,19 +30,39 @@ a {
   .nav {
     width: 100vw;
     height: em(100px);
-    padding: em(75px) em(100px);
+    padding-top: em(75px);
+    padding-bottom: em(75px);
+    padding-right: em(100px);
+    padding-left: em(80px);
     @extend %flex;
     align-items: flex-start;
     justify-content: space-between;
     .left-logos {
       .nav-logo1 {
         height: 50px;
-        margin-right: 10px;
       }
       .nav-logo2 {
         width: 175px;
-        // margin-left: -60px;
       }
+    }
+    .border-menu {
+      height: em(20px);
+      margin-top: 10px;
+      position: relative;
+      padding-left: 1.25em;
+      @include mq(large) {
+        display: none;
+      }
+    }
+    .border-menu:before {
+      content: "";
+      position: absolute;
+      top: 0.25em;
+      left: 0;
+      width: 1.5em;
+      height: .65em;
+      border-top: 0.375em double white;
+      border-bottom: 0.125em solid white;
     }
     .top-nav {
       list-style: none;
@@ -62,28 +82,60 @@ a {
     }
   }
   .main-center {
-    width: 100%;
     color: $white;
     @extend %flex;
     flex-direction: column;
     align-items: center;
+    img {
+      margin-bottom: em(10px);
+      @include mq(medium) {
+        margin-bottom: 10px;
+        margin-top: 40px;
 
+      }
+      @include mq(small) {
+        margin-top: 40px;
+        margin-bottom: 10px;
+      }
+
+    }
     .main-image {
       width: 850px;
       margin-top: -50px;
-      margin-bottom: -50px;
+      margin-bottom: -40px;
+      @include mq(medium) {
+        width: em(600px);
+        margin-bottom: -20px;
+      }
+      @include mq(small) {
+        width: em(400px);
+        margin-top: em(5px);
+        margin-bottom: -5px;
+        margin-left: -20px;
+      }
     }
     h2 {
       font-size: 20px;
       letter-spacing: 7px;
-      margin-bottom: 0;
+      margin-bottom: 10px;
       margin-top: 5px;
+      @include mq(medium) {
+        margin-bottom: 10px;
+      }
+      @include mq(small) {
+        margin-bottom: 10px;
+        font-size: 15px;
+
+      }
+
     }
     .main-line {
       height: em(5px);
       width: em(300px);
       display: inline-block;
       background-color: $white;
+      margin-top: em(10px);
+      margin-left: em(20px);
     }
     .wrap {
     overflow: hidden;
