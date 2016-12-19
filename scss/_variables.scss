@@ -1,12 +1,14 @@
 $white: rgb(255, 255, 255);
 $orange: #dc7725;
+$tan: #d1d1c9;
 
+// breakpoints
+$brkpoint-sm:  1px;
+$brkpoint-md:  599px;
+$brkpoint-lg:  1100px;
+
+// extends
 
 %flex {
   display: flex;
 }
-
-// breakpoints
-$brkpoint-sm:  1px;
-$brkpoint-md:  768px;
-$brkpoint-lg:  1100px;

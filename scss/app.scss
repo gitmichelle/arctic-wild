@@ -67,7 +67,7 @@ a {
     @extend %flex;
     flex-direction: column;
     align-items: center;
-    
+
     .main-image {
       width: 850px;
       margin-top: -50px;
@@ -207,6 +207,36 @@ a {
     background-size: cover;
     overflow: hidden;
     cursor: pointer;
+    position: relative;
+    @include mq(small) {
+      border-top: 20px;
+      border-bottom: 0;
+      border-left: 20px;
+      border-right: 20px;
+      border-color: $tan;
+      border-style: solid;
+      &:nth-child(6) {
+        border-bottom: 20px;
+        border-style: solid;
+        border-color: $tan;
+      }
+    }
+    .box-line {
+      height: em(5px);
+      width: em(40px);
+      background-color: $orange;
+      position: absolute;
+      left: em(40px);
+      bottom: em(80px);
+      margin-bottom: em(10px);
+    }
+    .box-text {
+      color: $white;
+      position: absolute;
+      left: em(30px);
+      bottom: em(35px);
+      font-size: em(20px);
+    }
     .circle {
       background-image: url("../img/bg-gallery-button.png");
       border-radius: 50%/50%;

@@ -40,10 +40,10 @@ a {
     .main .nav .top-nav {
       list-style: none;
       align-items: center; }
-      @media (min-width: 769px) {
+      @media (min-width: 600px) {
         .main .nav .top-nav {
           display: none; } }
-      @media (min-width: 1px) and (max-width: 768px) {
+      @media (min-width: 1px) and (max-width: 599px) {
         .main .nav .top-nav {
           display: none; } }
       .main .nav .top-nav li {
@@ -74,10 +74,10 @@ a {
       width: 12.5em;
       height: 9.375em;
       bottom: 0; }
-      @media (min-width: 769px) {
+      @media (min-width: 600px) {
         .main .main-center .wrap {
           display: none; } }
-      @media (min-width: 1px) and (max-width: 768px) {
+      @media (min-width: 1px) and (max-width: 599px) {
         .main .main-center .wrap {
           display: none; } }
       .main .main-center .wrap .button {
@@ -123,10 +123,10 @@ a {
   font-family: 'Open Sans', sans-serif;
   font-size: 0.875em;
   padding: 0 6.25em 0 1.875em; }
-  @media (min-width: 769px) {
+  @media (min-width: 600px) {
     .middle-nav-wrap {
       display: none; } }
-  @media (min-width: 1px) and (max-width: 768px) {
+  @media (min-width: 1px) and (max-width: 599px) {
     .middle-nav-wrap {
       display: none; } }
   .middle-nav-wrap .middle-nav {
@@ -169,7 +169,34 @@ a {
   background-position: center;
   background-size: cover;
   overflow: hidden;
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative; }
+  @media (min-width: 1px) and (max-width: 599px) {
+    .box {
+      border-top: 20px;
+      border-bottom: 0;
+      border-left: 20px;
+      border-right: 20px;
+      border-color: #d1d1c9;
+      border-style: solid; }
+      .box:nth-child(6) {
+        border-bottom: 20px;
+        border-style: solid;
+        border-color: #d1d1c9; } }
+  .box .box-line {
+    height: 0.3125em;
+    width: 2.5em;
+    background-color: #dc7725;
+    position: absolute;
+    left: 2.5em;
+    bottom: 5em;
+    margin-bottom: 0.625em; }
+  .box .box-text {
+    color: white;
+    position: absolute;
+    left: 1.875em;
+    bottom: 2.1875em;
+    font-size: 1.25em; }
   .box .circle {
     background-image: url("../img/bg-gallery-button.png");
     border-radius: 50%/50%;
