@@ -10,7 +10,7 @@ _Recreated the [Arctic Wild] (http://arcticwild.com/) landing page using flexbox
 
 ## Setup/Installation Requirements
 
-* _[Click here] (https://gitmichelle.github.io/arctic-wild/) to view on gh-pages._
+* _[Click here](https://gitmichelle.github.io/arctic-wild/) to view on gh-pages._
 * _Clone repository `https://github.com/gitmichelle/arctic-wild.git`
 
 
