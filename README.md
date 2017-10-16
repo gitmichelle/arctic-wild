@@ -6,7 +6,7 @@
 
 ## Description
 
-_Recreated the [Arctic Wild] (http://arcticwild.com/) landing page using flexbox and sass._
+_Recreated the [Arctic Wild](http://arcticwild.com/) landing page using flexbox and sass._
 
 ## Setup/Installation Requirements
 
